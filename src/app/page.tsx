@@ -14,7 +14,7 @@ type Banner = {
 };
 
 const fetchBannerData = async (): Promise<Banner[]> => {
-  const res = await fetch('/bannerData.json');
+  const res = await fetch('/BannerData.json');
   const data = await res.json();
   return data;
 };
